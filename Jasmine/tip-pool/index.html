@@ -1,0 +1,92 @@
+<html><head>
+    <title>Tip Pool</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- include CSS for Jasmine -->
+    <link rel="stylesheet" href="https://unpkg.com/jasmine-core/lib/jasmine-core/jasmine.css">
+    </head>
+    <body>
+      <h1>Tip Pool</h1>
+    
+      <section>
+        <aside>
+          <h4>Input payment info</h4>
+          <form id="paymentForm">
+            <label for="billAmt">Bill Amount</label>
+            <input type="number" id="billAmt" autofocus="">
+    
+            <label for="tipAmt">Tip Amount</label>
+            <input type="number" id="tipAmt">
+    
+            <button>submit</button>
+          </form>
+    
+          <table id="paymentTable">
+            <thead>
+              <tr>
+                <th>Bill amt</th>
+                <th>Tip amt</th>
+                <th>Tip percent</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </aside>
+        <aside>
+          <h4>Input server info</h4>
+          <form id="serverForm">
+            <label for="serverName">Server Name</label>
+            <input id="serverName">
+    
+            <button>submit</button>
+          </form>
+    
+          <table id="serverTable">
+            <thead>
+              <tr>
+                <th>Server Name</th>
+                <th>Earnings</th>
+              </tr>
+            </thead>
+            <tbody><tr id="server1"><td>Alice</td><td>$0.00</td></tr></tbody>
+          </table>
+        </aside>
+      </section>
+    
+      <section id="summary">
+        <h3>Shift summary</h3>
+        <table id="summaryTable">
+          <thead>
+            <tr>
+              <th>Bill total</th>
+              <th>Tip total</th>
+              <th>Tip percent avg</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    <!-- uncoment the following to run Jasmine tests -->
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine-html.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/boot.js"></script>
+    
+    <script src="servers.test.js"></script> 
+    
+    <!-- end of Jasmine tests -->
+    
+    <script src="payments.js"></script> 
+    <script src="servers.js"></script> 
+    <script src="helpers.js"></script> 
+    
+    
+    <div class="jasmine_html-reporter"><div class="jasmine-banner"><a class="jasmine-title" href="http://jasmine.github.io/" target="_blank"></a><span class="jasmine-version">3.3.0</span><div class="jasmine-run-options"><span class="jasmine-trigger">Options</span><div class="jasmine-payload"><div class="jasmine-stop-on-failure"><input class="jasmine-fail-fast" id="jasmine-fail-fast" type="checkbox"><label class="jasmine-label" for="jasmine-fail-fast">stop execution on spec failure</label></div><div class="jasmine-throw-failures"><input class="jasmine-throw" id="jasmine-throw-failures" type="checkbox"><label class="jasmine-label" for="jasmine-throw-failures">stop spec on expectation failure</label></div><div class="jasmine-random-order"><input class="jasmine-random" id="jasmine-random-order" type="checkbox"><label class="jasmine-label" for="jasmine-random-order">run tests in random order</label></div><div class="jasmine-hide-disabled"><input class="jasmine-disabled" id="jasmine-hide-disabled" type="checkbox"><label class="jasmine-label" for="jasmine-hide-disabled">hide disabled tests</label></div></div></div></div><ul class="jasmine-symbol-summary"><li class="jasmine-passed" id="spec_spec0" title="Servers test (with setup and tear-down) should add a new server to allServers on submitServerInfo()"></li></ul><div class="jasmine-alert"><span class="jasmine-duration">finished in 0.009s</span><span class="jasmine-overall-result jasmine-bar  jasmine-passed ">1 spec, 0 failures<span class="jasmine-seed-bar">, randomized with seed <a title="randomized with seed 02778" href="?seed=02778">02778</a></span></span></div><div class="jasmine-results"><div class="jasmine-failures"></div><div class="jasmine-summary"><ul class="jasmine-suite" id="suite-suite1"><li class="jasmine-suite-detail jasmine-passed"><a href="?spec=Servers%20test%20(with%20setup%20and%20tear-down)">Servers test (with setup and tear-down)</a></li><ul class="jasmine-specs"><li class="jasmine-passed" id="spec-spec0"><a href="?spec=Servers%20test%20(with%20setup%20and%20tear-down)%20should%20add%20a%20new%20server%20to%20allServers%20on%20submitServerInfo()">should add a new server to allServers on submitServerInfo()</a></li></ul></ul></div></div></div></body></html>
